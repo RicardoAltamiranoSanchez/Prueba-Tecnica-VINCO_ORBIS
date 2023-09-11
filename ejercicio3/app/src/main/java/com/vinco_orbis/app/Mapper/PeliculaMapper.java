@@ -19,6 +19,9 @@ public class PeliculaMapper {
         dto.setDirector(pelicula.getDirector());
         dto.setGenero(pelicula.getGenero());
         dto.setClasificacion(pelicula.getClasificacion());
+        dto.setDescripcion(pelicula.getDescripcion());
+        dto.setRaking(pelicula.getRaking());
+        dto.setImagen(pelicula.getImagen());
         if (pelicula.getHorarios() != null && !pelicula.getHorarios().isEmpty()) {
             dto.setHorarios(pelicula.getHorarios().stream().map(horarioMapper::toDTO).collect(Collectors.toList()));
         }
@@ -32,6 +35,9 @@ public class PeliculaMapper {
         pelicula.setDirector(dto.getDirector());
         pelicula.setGenero(dto.getGenero());
         pelicula.setClasificacion(dto.getClasificacion());
+        pelicula.setDescripcion(dto.getDescripcion());
+        pelicula.setRaking(dto.getRaking());
+        pelicula.setImagen(dto.getImagen());
       
         return pelicula;
     }

@@ -1,0 +1,182 @@
+[
+    {
+        "clasificacion": "PG-13",
+        "director": "Christopher Nolan",
+        "genero": "Drama",
+        "titulo": "Inception",
+        "descripcion": "Un ladrón experto en el arte de la extracción, roba secretos del subconsciente de sus víctimas mientras duermen.",
+        "raking": "9.0",
+        "imagen": "https://link_imagen_Inception.com"
+    },
+    {
+        "clasificacion": "R",
+        "director": "Quentin Tarantino",
+        "genero": "Acción",
+        "titulo": "Pulp Fiction",
+        "descripcion": "Historias interconectadas de criminales de Los Ángeles, incluyendo dos asesinos a sueldo, un boxeador y una pareja en un diner.",
+        "raking": "9.5",
+        "imagen": "https://link_imagen_PulpFiction.com"
+    },
+    {
+        "clasificacion": "PG",
+        "director": "Steven Spielberg",
+        "genero": "Aventura",
+        "titulo": "Indiana Jones: Raiders of the Lost Ark",
+        "descripcion": "El arqueólogo Indiana Jones se enfrenta a nazis y otros peligros en busca del Arca de la Alianza.",
+        "raking": "9.2",
+        "imagen": "https://link_imagen_IndianaJones.com"
+    },
+    {
+        "clasificacion": "G",
+        "director": "Andrew Stanton",
+        "genero": "Animación",
+        "titulo": "Finding Nemo",
+        "descripcion": "Un pez llamado Marlin se embarca en una aventura para encontrar a su hijo Nemo, quien ha sido capturado por un buzo.",
+        "raking": "9.1",
+        "imagen": "https://link_imagen_FindingNemo.com"
+    },
+    {
+        "clasificacion": "R",
+        "director": "Martin Scorsese",
+        "genero": "Crimen",
+        "titulo": "The Departed",
+        "descripcion": "Un agente encubierto y un topo en la policía intentan identificarse mutuamente mientras se infiltran en una banda irlandesa en Boston.",
+        "raking": "9.3",
+        "imagen": "https://link_imagen_TheDeparted.com"
+    },
+    {
+        "clasificacion": "PG",
+        "director": "Pete Docter",
+        "genero": "Animación",
+        "titulo": "Up",
+        "descripcion": "Un anciano viudo y un joven boy scout viajan juntos en una casa voladora suspendida por globos.",
+        "raking": "8.9",
+        "imagen": "https://link_imagen_Up.com"
+    },
+    {
+        "clasificacion": "R",
+        "director": "Joel Coen",
+        "genero": "Comedia",
+        "titulo": "The Big Lebowski",
+        "descripcion": "Jeff 'The Dude' Lebowski se ve envuelto en una trama de secuestro debido a una confusión de identidad.",
+        "raking": "8.8",
+        "imagen": "https://link_imagen_BigLebowski.com"
+    },
+    {
+        "clasificacion": "PG-13",
+        "director": "James Cameron",
+        "genero": "Ciencia Ficción",
+        "titulo": "Avatar",
+        "descripcion": "Un ex-marine se encuentra atrapado en Pandora y se enamora de una mujer Na'vi, encontrándose atrapado entre dos mundos.",
+        "raking": "9.1",
+        "imagen": "https://link_imagen_Avatar.com"
+    },
+    {
+        "clasificacion": "PG-13",
+        "director": "Peter Jackson",
+        "genero": "Fantasía",
+        "titulo": "The Lord of the Rings: The Fellowship of the Ring",
+        "descripcion": "Un joven hobbit, Frodo, se embarca en una misión para destruir un anillo mágico.",
+        "raking": "9.3",
+        "imagen": "https://link_imagen_LordOfTheRings.com"
+    },
+    {
+        "clasificacion": "R",
+        "director": "David Fincher",
+        "genero": "Thriller",
+        "titulo": "Se7en",
+        "descripcion": "Dos detectives buscan a un asesino en serie que utiliza los siete pecados capitales como sus motivos.",
+        "raking": "9.0",
+        "imagen": "https://link_imagen_Se7en.com"
+    },
+    {
+        "clasificacion": "G",
+        "director": "Brad Bird",
+        "genero": "Animación",
+        "titulo": "Ratatouille",
+        "descripcion": "Un ratón aspirante a chef forma una alianza inusual con un joven cocinero en un restaurante de París.",
+        "raking": "8.9",
+        "imagen": "https://link_imagen_Ratatouille.com"
+    },
+    {
+        "clasificacion": "PG",
+        "director": "Robert Zemeckis",
+        "genero": "Aventura",
+        "titulo": "Back to the Future",
+        "descripcion": "Un adolescente viaja al pasado con la ayuda del excéntrico Dr. Emmett Brown y su DeLorean, y debe asegurarse de que sus padres se encuentren y se enamoren o su existencia estará en peligro.",
+        "raking": "9.2",
+        "imagen": "https://link_imagen_BackToTheFuture.com"
+    },
+    {
+        "clasificacion": "PG-13",
+        "director": "Ron Howard",
+        "genero": "Drama",
+        "titulo": "A Beautiful Mind",
+        "descripcion": "La vida del matemático John Nash, desde sus años de joven promesa en Princeton hasta su lucha contra la esquizofrenia.",
+        "raking": "8.7",
+        "imagen": "https://link_imagen_ABeautifulMind.com"
+    },
+    {
+        "clasificacion": "R",
+        "director": "Danny Boyle",
+        "genero": "Drama",
+        "titulo": "Trainspotting",
+        "descripcion": "La vida de un grupo de heroinómanos escoceses se presenta sin adornos y con un sentido del humor negro.",
+        "raking": "8.6",
+        "imagen": "https://link_imagen_Trainspotting.com"
+    },
+    {
+        "clasificacion": "PG-13",
+        "director": "Ridley Scott",
+        "genero": "Acción",
+        "titulo": "Gladiator",
+        "descripcion": "Un general romano busca venganza contra el corrupto emperador que asesinó a su familia y lo envió a esclavitud.",
+        "raking": "8.8",
+        "imagen": "https://link_imagen_Gladiator.com"
+    },
+    {
+        "clasificacion": "R",
+        "director": "Darren Aronofsky",
+        "genero": "Drama",
+        "titulo": "Requiem for a Dream",
+        "descripcion": "Las vidas de cuatro individuos se desintegran a medida que caen en las profundidades de la adicción a las drogas.",
+        "raking": "8.5",
+        "imagen": "https://link_imagen_RequiemForADream.com"
+    },
+    {
+        "clasificacion": "G",
+        "director": "Lee Unkrich",
+        "genero": "Animación",
+        "titulo": "Toy Story 3",
+        "descripcion": "Los juguetes son entregados por error a una guardería antes del viaje universitario de Andy.",
+        "raking": "9.0",
+        "imagen": "https://link_imagen_ToyStory3.com"
+    },
+    {
+        "clasificacion": "R",
+        "director": "Guy Ritchie",
+        "genero": "Comedia",
+        "titulo": "Snatch",
+        "descripcion": "Dos tramas se entrecruzan: la búsqueda de un diamante robado y una pequeña apuesta en un combate de boxeo que tiene consecuencias letales.",
+        "raking": "8.4",
+        "imagen": "https://link_imagen_Snatch.com"
+    },
+    {
+        "clasificacion": "PG",
+        "director": "George Lucas",
+        "genero": "Ciencia Ficción",
+        "titulo": "Star Wars: A New Hope",
+        "descripcion": "Luke Skywalker se une a un grupo variopinto para destruir la Estrella de la Muerte y traer paz a la galaxia.",
+        "raking": "9.3",
+        "imagen": "https://link_imagen_StarWars.com"
+    },
+    {
+        "clasificacion": "R",
+        "director": "Stanley Kubrick",
+        "genero": "Horror",
+        "titulo": "The Shining",
+        "descripcion": "Un escritor y su familia se mudan a un hotel aislado donde presencias oscuras influyen en el padre hacia la violencia.",
+        "raking": "8.9",
+        "imagen": "https://link_imagen_TheShining.com"
+    }
+]

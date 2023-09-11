@@ -9,20 +9,13 @@ public class PeliculaDTO {
     private String director;
     private String genero;
     private String clasificacion;
+    private String descripcion;
+    private String raking;
+    private String imagen;
     private List<HorarioDTO> horarios;
 
 
-    public PeliculaDTO() {
-    }
-
-    public PeliculaDTO(Long id, String titulo, String director, String genero, String clasificacion, List<HorarioDTO> horarios) {
-        this.id = id;
-        this.titulo = titulo;
-        this.director = director;
-        this.genero = genero;
-        this.clasificacion = clasificacion;
-        this.horarios = horarios;
-    }
+ 
 
     public Long getId() {
         return this.id;
@@ -64,6 +57,30 @@ public class PeliculaDTO {
         this.clasificacion = clasificacion;
     }
 
+    public String getDescripcion() {
+        return this.descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getRaking() {
+        return this.raking;
+    }
+
+    public void setRaking(String raking) {
+        this.raking = raking;
+    }
+
+    public String getImagen() {
+        return this.imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
     public List<HorarioDTO> getHorarios() {
         return this.horarios;
     }
@@ -71,5 +88,5 @@ public class PeliculaDTO {
     public void setHorarios(List<HorarioDTO> horarios) {
         this.horarios = horarios;
     }
-   
+  
 }

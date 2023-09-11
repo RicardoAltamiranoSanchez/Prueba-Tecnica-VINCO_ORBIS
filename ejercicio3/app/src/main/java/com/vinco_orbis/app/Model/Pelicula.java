@@ -2,6 +2,7 @@ package com.vinco_orbis.app.Model;
 
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,33 +11,29 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 @Table(name="pelicula")
-public class Pelicula {
+public class Pelicula  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="pelicula_id")
     private Long id;
     private String titulo;
     private String director;
     private String genero; 
     private String clasificacion;
-
-    @OneToMany(mappedBy = "pelicula")
+    private String descripcion;
+    private String raking;
+    private String imagen;
+    
+    @OneToMany(mappedBy = "peliculaRelacion")
     private List<Horario> horarios;
 
-
-    public Pelicula() {
-    }
-
-    public Pelicula(Long id, String titulo, String director, String genero, String clasificacion, List<Horario> horarios) {
-        this.id = id;
-        this.titulo = titulo;
-        this.director = director;
-        this.genero = genero;
-        this.clasificacion = clasificacion;
-        this.horarios = horarios;
-    }
 
     public Long getId() {
         return this.id;
@@ -78,6 +75,30 @@ public class Pelicula {
         this.clasificacion = clasificacion;
     }
 
+    public String getDescripcion() {
+        return this.descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getRaking() {
+        return this.raking;
+    }
+
+    public void setRaking(String raking) {
+        this.raking = raking;
+    }
+
+    public String getImagen() {
+        return this.imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
     public List<Horario> getHorarios() {
         return this.horarios;
     }
@@ -85,5 +106,6 @@ public class Pelicula {
     public void setHorarios(List<Horario> horarios) {
         this.horarios = horarios;
     }
+
 
 }

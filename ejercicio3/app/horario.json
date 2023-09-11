@@ -1,0 +1,252 @@
+[
+    {
+        "horaInicio": "13:00",
+        "horaFin": "15:00",
+        "pelicula_id": 5
+    },
+    {
+        "horaInicio": "15:15",
+        "horaFin": "17:15",
+        "pelicula_id": 13
+    },
+    {
+        "horaInicio": "17:30",
+        "horaFin": "19:30",
+        "pelicula_id": 2
+    },
+    {
+        "horaInicio": "13:00",
+        "horaFin": "15:00",
+        "pelicula_id": 18
+    },
+    {
+        "horaInicio": "20:00",
+        "horaFin": "22:00",
+        "pelicula_id": 12
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 7
+    },
+    {
+        "horaInicio": "12:15",
+        "horaFin": "14:15",
+        "pelicula_id": 3
+    },
+    {
+        "horaInicio": "14:30",
+        "horaFin": "16:30",
+        "pelicula_id": 11
+    },
+    {
+        "horaInicio": "18:00",
+        "horaFin": "20:00",
+        "pelicula_id": 9
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 15
+    },
+    {
+        "horaInicio": "13:00",
+        "horaFin": "15:00",
+        "pelicula_id": 6
+    },
+    {
+        "horaInicio": "15:15",
+        "horaFin": "17:15",
+        "pelicula_id": 4
+    },
+    {
+        "horaInicio": "17:30",
+        "horaFin": "19:30",
+        "pelicula_id": 8
+    },
+    {
+        "horaInicio": "20:00",
+        "horaFin": "22:00",
+        "pelicula_id": 10
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 14
+    },
+    {
+        "horaInicio": "12:15",
+        "horaFin": "14:15",
+        "pelicula_id": 1
+    },
+    {
+        "horaInicio": "14:30",
+        "horaFin": "16:30",
+        "pelicula_id": 19
+    },
+    {
+        "horaInicio": "18:00",
+        "horaFin": "20:00",
+        "pelicula_id": 20
+    },
+    {
+        "horaInicio": "20:15",
+        "horaFin": "22:15",
+        "pelicula_id": 16
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 2
+    },
+    {
+        "horaInicio": "13:00",
+        "horaFin": "15:00",
+        "pelicula_id": 17
+    },
+    {
+        "horaInicio": "15:15",
+        "horaFin": "17:15",
+        "pelicula_id": 3
+    },
+    {
+        "horaInicio": "17:30",
+        "horaFin": "19:30",
+        "pelicula_id": 4
+    },
+    {
+        "horaInicio": "13:00",
+        "horaFin": "15:00",
+        "pelicula_id": 5
+    },
+    {
+        "horaInicio": "20:00",
+        "horaFin": "22:00",
+        "pelicula_id": 6
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 7
+    },
+    {
+        "horaInicio": "12:15",
+        "horaFin": "14:15",
+        "pelicula_id": 8
+    },
+    {
+        "horaInicio": "14:30",
+        "horaFin": "16:30",
+        "pelicula_id": 9
+    },
+    {
+        "horaInicio": "18:00",
+        "horaFin": "20:00",
+        "pelicula_id": 10
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 11
+    },
+    {
+        "horaInicio": "13:00",
+        "horaFin": "15:00",
+        "pelicula_id": 12
+    },
+    {
+        "horaInicio": "15:15",
+        "horaFin": "17:15",
+        "pelicula_id": 13
+    },
+    {
+        "horaInicio": "17:30",
+        "horaFin": "19:30",
+        "pelicula_id": 14
+    },
+    {
+        "horaInicio": "20:00",
+        "horaFin": "22:00",
+        "pelicula_id": 15
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 16
+    },
+    {
+        "horaInicio": "12:15",
+        "horaFin": "14:15",
+        "pelicula_id": 17
+    },
+    {
+        "horaInicio": "14:30",
+        "horaFin": "16:30",
+        "pelicula_id": 18
+    },
+    {
+        "horaInicio": "18:00",
+        "horaFin": "20:00",
+        "pelicula_id": 19
+    },
+    {
+        "horaInicio": "20:15",
+        "horaFin": "22:15",
+        "pelicula_id": 1
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 2
+    },
+    {
+        "horaInicio": "13:00",
+        "horaFin": "15:00",
+        "pelicula_id": 3
+    },
+    {
+        "horaInicio": "15:15",
+        "horaFin": "17:15",
+        "pelicula_id": 4
+    },
+    {
+        "horaInicio": "17:30",
+        "horaFin": "19:30",
+        "pelicula_id": 5
+    },
+    {
+        "horaInicio": "13:00",
+        "horaFin": "15:00",
+        "pelicula_id": 6
+    },
+    {
+        "horaInicio": "20:00",
+        "horaFin": "22:00",
+        "pelicula_id": 7
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 8
+    },
+    {
+        "horaInicio": "12:15",
+        "horaFin": "14:15",
+        "pelicula_id": 9
+    },
+    {
+        "horaInicio": "14:30",
+        "horaFin": "16:30",
+        "pelicula_id": 10
+    },
+    {
+        "horaInicio": "18:00",
+        "horaFin": "20:00",
+        "pelicula_id": 11
+    },
+    {
+        "horaInicio": "10:00",
+        "horaFin": "12:00",
+        "pelicula_id": 12
+    }
+]

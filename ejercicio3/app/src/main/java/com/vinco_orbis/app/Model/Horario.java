@@ -1,6 +1,7 @@
 package com.vinco_orbis.app.Model;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,37 +10,39 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
+
 import java.time.LocalTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 @Entity
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 @Table(name="horario")
 public class Horario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="horario_id")
     private Long id;
     private LocalTime horaInicio;
     private LocalTime horaFin;
-
+    
+    @NotNull
+    @Column(name = "pelicula_id",nullable = false)
+    private Integer pelicula_id;
+    
+    
     @ManyToOne
-    @JoinColumn(name="pelicula_id")
-    private Pelicula pelicula;
+    @JoinColumn(name="pelicula_id",insertable = false,updatable = false)
+    private Pelicula peliculaRelacion;
 
-    @OneToMany(mappedBy = "horario")
+    @OneToMany(mappedBy = "horarioRelacion")
     private List<Asiento> asientos;
 
-    public Horario() {
-    }
-
-
-    public Horario(Long id, LocalTime horaInicio, LocalTime horaFin, Pelicula pelicula, List<Asiento> asientos) {
-        this.id = id;
-        this.horaInicio = horaInicio;
-        this.horaFin = horaFin;
-        this.pelicula = pelicula;
-        this.asientos = asientos;
-    }
+   
 
     public Long getId() {
         return this.id;
@@ -65,12 +68,20 @@ public class Horario {
         this.horaFin = horaFin;
     }
 
-    public Pelicula getPelicula() {
-        return this.pelicula;
+    public Integer getPelicula_id() {
+        return this.pelicula_id;
     }
 
-    public void setPelicula(Pelicula pelicula) {
-        this.pelicula = pelicula;
+    public void setPelicula_id(Integer pelicula_id) {
+        this.pelicula_id = pelicula_id;
+    }
+
+    public Pelicula getPeliculaRelacion() {
+        return this.peliculaRelacion;
+    }
+
+    public void setPeliculaRelacion(Pelicula peliculaRelacion) {
+        this.peliculaRelacion = peliculaRelacion;
     }
 
     public List<Asiento> getAsientos() {
@@ -80,5 +91,7 @@ public class Horario {
     public void setAsientos(List<Asiento> asientos) {
         this.asientos = asientos;
     }
+  
+ 
    
 }
