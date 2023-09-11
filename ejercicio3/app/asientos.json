@@ -1,0 +1,503 @@
+[
+    {
+        "numero": "1",
+        "estado": "Ocupado",
+        "horario_id": 1
+    },
+    {
+        "numero": "1",
+        "estado": "Reservado",
+        "horario_id": 2
+    },
+    {
+        "numero": "2",
+        "estado": "Disponible",
+        "horario_id": 3
+    },
+    {
+        "numero": "2",
+        "estado": "Ocupado",
+        "horario_id": 4
+    },
+    {
+        "numero": "3",
+        "estado": "Disponible",
+        "horario_id": 5
+    },
+    {
+        "numero": "3",
+        "estado": "Reservado",
+        "horario_id": 6
+    },
+    {
+        "numero": "4",
+        "estado": "Ocupado",
+        "horario_id": 7
+    },
+    {
+        "numero": "4",
+        "estado": "Disponible",
+        "horario_id": 8
+    },
+    {
+        "numero": "5",
+        "estado": "Ocupado",
+        "horario_id": 9
+    },
+    {
+        "numero": "5",
+        "estado": "Reservado",
+        "horario_id": 10
+    },
+    {
+        "numero": "6",
+        "estado": "Disponible",
+        "horario_id": 11
+    },
+    {
+        "numero": "6",
+        "estado": "Ocupado",
+        "horario_id": 12
+    },
+    {
+        "numero": "7",
+        "estado": "Disponible",
+        "horario_id": 13
+    },
+    {
+        "numero": "7",
+        "estado": "Reservado",
+        "horario_id": 14
+    },
+    {
+        "numero": "8",
+        "estado": "Ocupado",
+        "horario_id": 15
+    },
+    {
+        "numero": "8",
+        "estado": "Disponible",
+        "horario_id": 16
+    },
+    {
+        "numero": "9",
+        "estado": "Ocupado",
+        "horario_id": 17
+    },
+    {
+        "numero": "9",
+        "estado": "Reservado",
+        "horario_id": 18
+    },
+    {
+        "numero": "10",
+        "estado": "Disponible",
+        "horario_id": 19
+    },
+    {
+        "numero": "10",
+        "estado": "Ocupado",
+        "horario_id": 20
+    },
+    {
+        "numero": "11",
+        "estado": "Disponible",
+        "horario_id": 21
+    },
+    {
+        "numero": "11",
+        "estado": "Reservado",
+        "horario_id": 22
+    },
+    {
+        "numero": "12",
+        "estado": "Ocupado",
+        "horario_id": 23
+    },
+    {
+        "numero": "12",
+        "estado": "Disponible",
+        "horario_id": 24
+    },
+    {
+        "numero": "13",
+        "estado": "Ocupado",
+        "horario_id": 25
+    },
+    {
+        "numero": "13",
+        "estado": "Reservado",
+        "horario_id": 26
+    },
+    {
+        "numero": "14",
+        "estado": "Disponible",
+        "horario_id": 27
+    },
+    {
+        "numero": "14",
+        "estado": "Ocupado",
+        "horario_id": 28
+    },
+    {
+        "numero": "15",
+        "estado": "Disponible",
+        "horario_id": 29
+    },
+    {
+        "numero": "15",
+        "estado": "Reservado",
+        "horario_id": 30
+    },
+    {
+        "numero": "16",
+        "estado": "Ocupado",
+        "horario_id": 31
+    },
+    {
+        "numero": "16",
+        "estado": "Disponible",
+        "horario_id": 32
+    },
+    {
+        "numero": "17",
+        "estado": "Ocupado",
+        "horario_id": 33
+    },
+    {
+        "numero": "17",
+        "estado": "Reservado",
+        "horario_id": 34
+    },
+    {
+        "numero": "18",
+        "estado": "Disponible",
+        "horario_id": 35
+    },
+    {
+        "numero": "18",
+        "estado": "Ocupado",
+        "horario_id": 36
+    },
+    {
+        "numero": "19",
+        "estado": "Disponible",
+        "horario_id": 37
+    },
+    {
+        "numero": "19",
+        "estado": "Reservado",
+        "horario_id": 38
+    },
+    {
+        "numero": "20",
+        "estado": "Ocupado",
+        "horario_id": 39
+    },
+    {
+        "numero": "20",
+        "estado": "Disponible",
+        "horario_id": 40
+    },
+    {
+        "numero": "21",
+        "estado": "Ocupado",
+        "horario_id": 41
+    },
+    {
+        "numero": "21",
+        "estado": "Reservado",
+        "horario_id": 42
+    },
+    {
+        "numero": "22",
+        "estado": "Disponible",
+        "horario_id": 43
+    },
+    {
+        "numero": "22",
+        "estado": "Ocupado",
+        "horario_id": 44
+    },
+    {
+        "numero": "23",
+        "estado": "Disponible",
+        "horario_id": 45
+    },
+    {
+        "numero": "23",
+        "estado": "Reservado",
+        "horario_id": 46
+    },
+    {
+        "numero": "24",
+        "estado": "Ocupado",
+        "horario_id": 47
+    },
+    {
+        "numero": "24",
+        "estado": "Disponible",
+        "horario_id": 48
+    },
+    {
+        "numero": "25",
+        "estado": "Ocupado",
+        "horario_id": 49
+    },
+    {
+        "numero": "25",
+        "estado": "Reservado",
+        "horario_id": 50
+    },
+    
+        {
+        "numero": "26",
+        "estado": "Disponible",
+        "horario_id": 1
+    },
+    {
+        "numero": "26",
+        "estado": "Ocupado",
+        "horario_id": 2
+    },
+    {
+        "numero": "27",
+        "estado": "Reservado",
+        "horario_id": 3
+    },
+    {
+        "numero": "27",
+        "estado": "Disponible",
+        "horario_id": 4
+    },
+    {
+        "numero": "28",
+        "estado": "Ocupado",
+        "horario_id": 5
+    },
+    {
+        "numero": "28",
+        "estado": "Reservado",
+        "horario_id": 6
+    },
+    {
+        "numero": "29",
+        "estado": "Disponible",
+        "horario_id": 7
+    },
+    {
+        "numero": "29",
+        "estado": "Ocupado",
+        "horario_id": 8
+    },
+    {
+        "numero": "30",
+        "estado": "Reservado",
+        "horario_id": 9
+    },
+    {
+        "numero": "30",
+        "estado": "Disponible",
+        "horario_id": 10
+    },
+    {
+        "numero": "31",
+        "estado": "Ocupado",
+        "horario_id": 11
+    },
+    {
+        "numero": "31",
+        "estado": "Reservado",
+        "horario_id": 12
+    },
+    {
+        "numero": "32",
+        "estado": "Disponible",
+        "horario_id": 13
+    },
+    {
+        "numero": "32",
+        "estado": "Ocupado",
+        "horario_id": 14
+    },
+    {
+        "numero": "33",
+        "estado": "Reservado",
+        "horario_id": 15
+    },
+    {
+        "numero": "33",
+        "estado": "Disponible",
+        "horario_id": 16
+    },
+    {
+        "numero": "34",
+        "estado": "Ocupado",
+        "horario_id": 17
+    },
+    {
+        "numero": "34",
+        "estado": "Reservado",
+        "horario_id": 18
+    },
+    {
+        "numero": "35",
+        "estado": "Disponible",
+        "horario_id": 19
+    },
+    {
+        "numero": "35",
+        "estado": "Ocupado",
+        "horario_id": 20
+    },
+    {
+        "numero": "36",
+        "estado": "Reservado",
+        "horario_id": 21
+    },
+    {
+        "numero": "36",
+        "estado": "Disponible",
+        "horario_id": 22
+    },
+    {
+        "numero": "37",
+        "estado": "Ocupado",
+        "horario_id": 23
+    },
+    {
+        "numero": "37",
+        "estado": "Reservado",
+        "horario_id": 24
+    },
+    {
+        "numero": "38",
+        "estado": "Disponible",
+        "horario_id": 25
+    },
+    {
+        "numero": "38",
+        "estado": "Ocupado",
+        "horario_id": 26
+    },
+    {
+        "numero": "39",
+        "estado": "Reservado",
+        "horario_id": 27
+    },
+    {
+        "numero": "39",
+        "estado": "Disponible",
+        "horario_id": 28
+    },
+    {
+        "numero": "40",
+        "estado": "Ocupado",
+        "horario_id": 29
+    },
+    {
+        "numero": "40",
+        "estado": "Reservado",
+        "horario_id": 30
+    },
+    {
+        "numero": "41",
+        "estado": "Disponible",
+        "horario_id": 31
+    },
+    {
+        "numero": "41",
+        "estado": "Ocupado",
+        "horario_id": 32
+    },
+    {
+        "numero": "42",
+        "estado": "Reservado",
+        "horario_id": 33
+    },
+    {
+        "numero": "42",
+        "estado": "Disponible",
+        "horario_id": 34
+    },
+    {
+        "numero": "43",
+        "estado": "Ocupado",
+        "horario_id": 35
+    },
+    {
+        "numero": "43",
+        "estado": "Reservado",
+        "horario_id": 36
+    },
+    {
+        "numero": "44",
+        "estado": "Disponible",
+        "horario_id": 37
+    },
+    {
+        "numero": "44",
+        "estado": "Ocupado",
+        "horario_id": 38
+    },
+    {
+        "numero": "45",
+        "estado": "Reservado",
+        "horario_id": 39
+    },
+    {
+        "numero": "45",
+        "estado": "Disponible",
+        "horario_id": 40
+    },
+    {
+        "numero": "46",
+        "estado": "Ocupado",
+        "horario_id": 41
+    },
+    {
+        "numero": "46",
+        "estado": "Reservado",
+        "horario_id": 42
+    },
+    {
+        "numero": "47",
+        "estado": "Disponible",
+        "horario_id": 43
+    },
+    {
+        "numero": "47",
+        "estado": "Ocupado",
+        "horario_id": 44
+    },
+    {
+        "numero": "48",
+        "estado": "Reservado",
+        "horario_id": 45
+    },
+    {
+        "numero": "48",
+        "estado": "Disponible",
+        "horario_id": 46
+    },
+    {
+        "numero": "49",
+        "estado": "Ocupado",
+        "horario_id": 47
+    },
+    {
+        "numero": "49",
+        "estado": "Reservado",
+        "horario_id": 48
+    },
+    {
+        "numero": "50",
+        "estado": "Disponible",
+        "horario_id": 49
+    },
+    {
+        "numero": "50",
+        "estado": "Ocupado",
+        "horario_id": 50
+    }
+]

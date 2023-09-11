@@ -32,7 +32,7 @@ public class PeliculaController {
     public List<Pelicula> getAllPeliculas() {
         List<Pelicula> peliculas = peliculaService.getAllPeliculas();
         if (peliculas == null || peliculas.isEmpty()) {
-            throw new ResourceNotFoundException("No hay películas disponibles en este momento.");
+            throw new ResourceNotFoundException("No hay peliculas disponibles en este momento.");
         }
         return peliculas;
     }
@@ -43,12 +43,12 @@ public class PeliculaController {
             @Parameter(description = "Obtener pelicula por id", required = true) @PathVariable Long id) {
 
         if (id <= 0) {
-            throw new BadRequestException("El ID proporcionado no es válido.");
+            throw new BadRequestException("El ID proporcionado no es valido.");
         }
 
         Pelicula pelicula = peliculaService.getPeliculaById(id);
         if (pelicula == null) {
-            throw new ResourceNotFoundException("No se encontró la película con el ID: " + id);
+            throw new ResourceNotFoundException("No se encontro la película con el ID: " + id);
         }
         return pelicula;
     }
@@ -64,7 +64,7 @@ public class PeliculaController {
 
         Pelicula savedPelicula = peliculaService.saveOrUpdatePelicula(pelicula);
         if (savedPelicula == null) {
-            throw new InternalServerErrorException("Ocurrió un error al guardar la película.");
+            throw new InternalServerErrorException("Ocurrio un error al guardar la película.");
         }
 
         Map<String, String> response = new HashMap<>();
@@ -73,18 +73,18 @@ public class PeliculaController {
     }
 
     @PostMapping("/addPeliculas")
-    @Operation(summary = "Agregar multiples películas")
+    @Operation(summary = "Agregar multiples peliculas")
     public Map<String, String> saveMultiplePeliculas(
             @Parameter(description = "Listado de peliculas para agregar", required = true)
             @RequestBody List<Pelicula> peliculas) {
 
         if (peliculas == null || peliculas.isEmpty()) {
-            throw new BadRequestException("La lista de películas no puede estar vacía.");
+            throw new BadRequestException("La lista de peliculas no puede estar vacia.");
         }
 
         for (Pelicula pelicula : peliculas) {
             if (peliculaService.existsByTitulo(pelicula.getTitulo())) {
-                throw new ConflictException("La película con el título '" + pelicula.getTitulo() + "' ya existe.");
+                throw new ConflictException("La pelicula con el título '" + pelicula.getTitulo() + "' ya existe.");
             }
         }
 
@@ -94,7 +94,7 @@ public class PeliculaController {
             response.put("mensaje", "Peliculas Agregadas con exito con exito");
             return response;
         } catch (Exception e) {
-            throw new InternalServerErrorException("Ocurrió un error al guardar las películas.");
+            throw new InternalServerErrorException("Ocurrio un error al guardar las peliculas.");
         }
     }
 
@@ -108,11 +108,11 @@ public class PeliculaController {
             @PathVariable Long id) {
 
         if (peliculaService.getPeliculaById(id) == null) {
-            throw new ResourceNotFoundException("No se encontró la película con el ID: " + id);
+            throw new ResourceNotFoundException("No se encontró la pelicula con el ID: " + id);
         }
    
         if (peliculaService.existsByTitulo(pelicula.getTitulo())) {
-            throw new ConflictException("El título '" + pelicula.getTitulo() + "' ya está en uso por otra película.");
+            throw new ConflictException("El titulo '" + pelicula.getTitulo() + "' ya esta en uso por otra pelicula.");
         }
 
         try {
@@ -122,7 +122,7 @@ public class PeliculaController {
             response.put("mensaje", "Pelicula actualizada con exito");
             return response;
         } catch (Exception e) {
-            throw new InternalServerErrorException("Ocurrió un error al actualizar la película.");
+            throw new InternalServerErrorException("Ocurrio un error al actualizar la pelicula.");
         }
     }
 
@@ -143,7 +143,7 @@ public class PeliculaController {
             response.put("mensaje", "Pelicula eliminada con exito");
             return response;
         } catch (Exception e) {
-            throw new InternalServerErrorException("Ocurrió un error al intentar eliminar la película con ID " + e);
+            throw new InternalServerErrorException("Ocurrio un error al intentar eliminar la película con ID " + e);
         }
     }
 

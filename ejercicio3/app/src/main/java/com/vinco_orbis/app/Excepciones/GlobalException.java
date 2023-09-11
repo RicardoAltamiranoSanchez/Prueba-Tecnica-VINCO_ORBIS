@@ -66,5 +66,10 @@ public ResponseEntity<Object> handleInternalServerErrorException(InternalServerE
     ApiError apiError = new ApiError(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage(), Collections.singletonList(ex.getLocalizedMessage()));
     return new ResponseEntity<>(apiError, HttpStatus.INTERNAL_SERVER_ERROR);
 }
+@ExceptionHandler(BusinessException.class)
+public ResponseEntity<Object> handleBusinessException(BusinessException ex) {
+    ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, ex.getMessage(), Collections.singletonList(ex.getLocalizedMessage()));
+    return new ResponseEntity<>(apiError, HttpStatus.BAD_REQUEST);
+}
 
 }

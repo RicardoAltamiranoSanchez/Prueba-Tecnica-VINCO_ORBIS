@@ -38,6 +38,7 @@ public class HorarioController {
             throw new ResourceNotFoundException("No hay horarios disponibles en este momento.");
         }
         return horarios;
+        
     }
 
     @GetMapping("/{id}")
@@ -46,7 +47,7 @@ public class HorarioController {
             @Parameter(description = "ID del horario", required = true) @PathVariable Long id) {
 
         if (id <= 0) {
-            throw new BadRequestException("El ID proporcionado no es válido.");
+            throw new BadRequestException("El ID proporcionado no es valido.");
         }
 
         Horario horario = horarioService.getHorarioById(id);
@@ -71,16 +72,16 @@ public class HorarioController {
 
         Horario savedHorario = horarioService.saveOrUpdateHorario(horario);
         if (savedHorario == null) {
-            throw new InternalServerErrorException("Ocurrió un error al guardar el horario.");
+            throw new InternalServerErrorException("Ocurrio un error al guardar el horario.");
         }
 
         Map<String, String> response = new HashMap<>();
-        response.put("mensaje", "Horario agregado con éxito");
+        response.put("mensaje", "Horario agregado con exito");
         return response;
     }
 
     @PostMapping("/addHorarios")
-    @Operation(summary = "Agregar múltiples horarios")
+    @Operation(summary = "Agregar multiples horarios")
     public Map<String, String> saveMultipleHorarios(
             @Parameter(description = "Horario a guardar", required = true) @Valid @RequestBody List<Horario> horarios) {
 
@@ -98,7 +99,7 @@ public class HorarioController {
             response.put("mensaje", "Horarios agregado  con exito");
             return response;
         } catch (Exception e) {
-            throw new InternalServerErrorException("Ocurrió un error al guardar las películas.");
+            throw new InternalServerErrorException("Ocurrio un error al guardar las peliculas.");
         }
 
     }
@@ -111,14 +112,14 @@ public class HorarioController {
             @Parameter(description = "ID del horario a actualizar", required = true) @PathVariable Long id) {
 
         if (horarioService.getHorarioById(id) == null) {
-            throw new ResourceNotFoundException("No se encontró el horario con el ID: " + id);
+            throw new ResourceNotFoundException("No se encontro el horario con el ID: " + id);
         }
 
         Horario existHorario = horarioService.existsByHorarioPelicula(horario);
         if (existHorario != null) {
             Pelicula pelicula = peliculaService.getPeliculaById(Long.valueOf(existHorario.getPelicula_id()));
 
-            throw new ConflictException("Este horario ya existe para la película con título: " + pelicula.getTitulo()
+            throw new ConflictException("Este horario ya existe para la película con titulo: " + pelicula.getTitulo()
                     + "y Id:" + pelicula.getId());
         }
 
@@ -126,10 +127,10 @@ public class HorarioController {
             horario.setId(id);
             horarioService.saveOrUpdateHorario(horario);
             Map<String, String> response = new HashMap<>();
-            response.put("mensaje", "Horario actualizado con éxito");
+            response.put("mensaje", "Horario actualizado con exito");
             return response;
         } catch (Exception e) {
-            throw new InternalServerErrorException("Ocurrió un error al actualizar el horario.");
+            throw new InternalServerErrorException("Ocurrio un error al actualizar el horario.");
         }
     }
 
@@ -146,10 +147,10 @@ public class HorarioController {
         try {
             horarioService.deleteHorario(id);
             Map<String, String> response = new HashMap<>();
-            response.put("mensaje", "Horario eliminado con éxito");
+            response.put("mensaje", "Horario eliminado con exito");
             return response;
         } catch (Exception e) {
-            throw new InternalServerErrorException("Ocurrió un error al intentar eliminar el horario con ID " + id);
+            throw new InternalServerErrorException("Ocurrio un error al intentar eliminar el horario con ID " + id);
         }
     }
 

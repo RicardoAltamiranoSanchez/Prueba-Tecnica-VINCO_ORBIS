@@ -273,7 +273,56 @@
 			"name": "Asientos",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Obtener todos los asientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/api/asientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"asientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar un asiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero\": 2,\r\n    \"estado\": \"Ocupado\",\r\n    \"horario_id\": 1  \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/api/asientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"asientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener asiento por id",
 					"request": {
 						"method": "GET",
 						"header": []
@@ -283,8 +332,59 @@
 				{
 					"name": "New Request",
 					"request": {
-						"method": "GET",
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/api/asientos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"asientos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
 						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar un listado de asientos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"numero\": \"1\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 1\r\n    },\r\n    {\r\n        \"numero\": \"1\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 2\r\n    },\r\n    {\r\n        \"numero\": \"2\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 3\r\n    },\r\n    {\r\n        \"numero\": \"2\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 4\r\n    },\r\n    {\r\n        \"numero\": \"3\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 5\r\n    },\r\n    {\r\n        \"numero\": \"3\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 6\r\n    },\r\n    {\r\n        \"numero\": \"4\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 7\r\n    },\r\n    {\r\n        \"numero\": \"4\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 8\r\n    },\r\n    {\r\n        \"numero\": \"5\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 9\r\n    },\r\n    {\r\n        \"numero\": \"5\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 10\r\n    },\r\n    {\r\n        \"numero\": \"6\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 11\r\n    },\r\n    {\r\n        \"numero\": \"6\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 12\r\n    },\r\n    {\r\n        \"numero\": \"7\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 13\r\n    },\r\n    {\r\n        \"numero\": \"7\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 14\r\n    },\r\n    {\r\n        \"numero\": \"8\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 15\r\n    },\r\n    {\r\n        \"numero\": \"8\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 16\r\n    },\r\n    {\r\n        \"numero\": \"9\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 17\r\n    },\r\n    {\r\n        \"numero\": \"9\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 18\r\n    },\r\n    {\r\n        \"numero\": \"10\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 19\r\n    },\r\n    {\r\n        \"numero\": \"10\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 20\r\n    },\r\n    {\r\n        \"numero\": \"11\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 21\r\n    },\r\n    {\r\n        \"numero\": \"11\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 22\r\n    },\r\n    {\r\n        \"numero\": \"12\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 23\r\n    },\r\n    {\r\n        \"numero\": \"12\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 24\r\n    },\r\n    {\r\n        \"numero\": \"13\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 25\r\n    },\r\n    {\r\n        \"numero\": \"13\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 26\r\n    },\r\n    {\r\n        \"numero\": \"14\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 27\r\n    },\r\n    {\r\n        \"numero\": \"14\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 28\r\n    },\r\n    {\r\n        \"numero\": \"15\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 29\r\n    },\r\n    {\r\n        \"numero\": \"15\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 30\r\n    },\r\n    {\r\n        \"numero\": \"16\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 31\r\n    },\r\n    {\r\n        \"numero\": \"16\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 32\r\n    },\r\n    {\r\n        \"numero\": \"17\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 33\r\n    },\r\n    {\r\n        \"numero\": \"17\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 34\r\n    },\r\n    {\r\n        \"numero\": \"18\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 35\r\n    },\r\n    {\r\n        \"numero\": \"18\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 36\r\n    },\r\n    {\r\n        \"numero\": \"19\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 37\r\n    },\r\n    {\r\n        \"numero\": \"19\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 38\r\n    },\r\n    {\r\n        \"numero\": \"20\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 39\r\n    },\r\n    {\r\n        \"numero\": \"20\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 40\r\n    },\r\n    {\r\n        \"numero\": \"21\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 41\r\n    },\r\n    {\r\n        \"numero\": \"21\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 42\r\n    },\r\n    {\r\n        \"numero\": \"22\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 43\r\n    },\r\n    {\r\n        \"numero\": \"22\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 44\r\n    },\r\n    {\r\n        \"numero\": \"23\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 45\r\n    },\r\n    {\r\n        \"numero\": \"23\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 46\r\n    },\r\n    {\r\n        \"numero\": \"24\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 47\r\n    },\r\n    {\r\n        \"numero\": \"24\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 48\r\n    },\r\n    {\r\n        \"numero\": \"25\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 49\r\n    },\r\n    {\r\n        \"numero\": \"25\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 50\r\n    },\r\n    \r\n        {\r\n        \"numero\": \"26\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 1\r\n    },\r\n    {\r\n        \"numero\": \"26\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 2\r\n    },\r\n    {\r\n        \"numero\": \"27\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 3\r\n    },\r\n    {\r\n        \"numero\": \"27\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 4\r\n    },\r\n    {\r\n        \"numero\": \"28\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 5\r\n    },\r\n    {\r\n        \"numero\": \"28\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 6\r\n    },\r\n    {\r\n        \"numero\": \"29\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 7\r\n    },\r\n    {\r\n        \"numero\": \"29\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 8\r\n    },\r\n    {\r\n        \"numero\": \"30\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 9\r\n    },\r\n    {\r\n        \"numero\": \"30\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 10\r\n    },\r\n    {\r\n        \"numero\": \"31\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 11\r\n    },\r\n    {\r\n        \"numero\": \"31\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 12\r\n    },\r\n    {\r\n        \"numero\": \"32\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 13\r\n    },\r\n    {\r\n        \"numero\": \"32\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 14\r\n    },\r\n    {\r\n        \"numero\": \"33\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 15\r\n    },\r\n    {\r\n        \"numero\": \"33\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 16\r\n    },\r\n    {\r\n        \"numero\": \"34\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 17\r\n    },\r\n    {\r\n        \"numero\": \"34\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 18\r\n    },\r\n    {\r\n        \"numero\": \"35\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 19\r\n    },\r\n    {\r\n        \"numero\": \"35\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 20\r\n    },\r\n    {\r\n        \"numero\": \"36\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 21\r\n    },\r\n    {\r\n        \"numero\": \"36\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 22\r\n    },\r\n    {\r\n        \"numero\": \"37\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 23\r\n    },\r\n    {\r\n        \"numero\": \"37\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 24\r\n    },\r\n    {\r\n        \"numero\": \"38\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 25\r\n    },\r\n    {\r\n        \"numero\": \"38\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 26\r\n    },\r\n    {\r\n        \"numero\": \"39\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 27\r\n    },\r\n    {\r\n        \"numero\": \"39\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 28\r\n    },\r\n    {\r\n        \"numero\": \"40\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 29\r\n    },\r\n    {\r\n        \"numero\": \"40\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 30\r\n    },\r\n    {\r\n        \"numero\": \"41\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 31\r\n    },\r\n    {\r\n        \"numero\": \"41\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 32\r\n    },\r\n    {\r\n        \"numero\": \"42\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 33\r\n    },\r\n    {\r\n        \"numero\": \"42\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 34\r\n    },\r\n    {\r\n        \"numero\": \"43\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 35\r\n    },\r\n    {\r\n        \"numero\": \"43\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 36\r\n    },\r\n    {\r\n        \"numero\": \"44\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 37\r\n    },\r\n    {\r\n        \"numero\": \"44\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 38\r\n    },\r\n    {\r\n        \"numero\": \"45\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 39\r\n    },\r\n    {\r\n        \"numero\": \"45\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 40\r\n    },\r\n    {\r\n        \"numero\": \"46\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 41\r\n    },\r\n    {\r\n        \"numero\": \"46\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 42\r\n    },\r\n    {\r\n        \"numero\": \"47\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 43\r\n    },\r\n    {\r\n        \"numero\": \"47\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 44\r\n    },\r\n    {\r\n        \"numero\": \"48\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 45\r\n    },\r\n    {\r\n        \"numero\": \"48\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 46\r\n    },\r\n    {\r\n        \"numero\": \"49\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 47\r\n    },\r\n    {\r\n        \"numero\": \"49\",\r\n        \"estado\": \"Reservado\",\r\n        \"horario_id\": 48\r\n    },\r\n    {\r\n        \"numero\": \"50\",\r\n        \"estado\": \"Disponible\",\r\n        \"horario_id\": 49\r\n    },\r\n    {\r\n        \"numero\": \"50\",\r\n        \"estado\": \"Ocupado\",\r\n        \"horario_id\": 50\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/api/asientos/addAsientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"asientos",
+								"addAsientos"
+							]
+						}
 					},
 					"response": []
 				}
